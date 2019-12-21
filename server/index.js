@@ -1,11 +1,15 @@
 const express = require('express');
-const keys = require('./config/keys');
+const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const connectDB = require('./config/db');
-connectDB();
+const keys = require('./config/keys');
 require('./models/User');
 require('./services/passport');
+
+mongoose.connect(keys.mongoURI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
 const app = express();
 app.use(
