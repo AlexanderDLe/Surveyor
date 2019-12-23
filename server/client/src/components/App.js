@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import { fetchUser } from '../actions';
 
 import Header from './Header';
+import Landing from './Landing';
 
 const Dashboard = () => <div className="">Dashboard</div>;
-const Landing = () => <div className="">Landing</div>;
 const SurveyNew = () => <div className="">New Survey</div>;
 
 class App extends React.Component {
