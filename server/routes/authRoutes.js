@@ -1,4 +1,3 @@
-// Changed name again.
 const passport = require('passport');
 
 module.exports = app => {
