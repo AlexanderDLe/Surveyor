@@ -33,9 +33,7 @@ class Header extends React.Component {
                     >
                         Surveyor
                     </Link>
-                    <ul className="right">
-                        <li>{this.renderContent()}</li>
-                    </ul>
+                    <ul className="right">{this.renderContent()}</ul>
                 </div>
             </nav>
         );
