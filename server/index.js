@@ -5,6 +5,7 @@ const passport = require('passport');
 const keys = require('./config/keys');
 const bodyParser = require('body-parser');
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 ///
 mongoose
@@ -35,6 +36,7 @@ if (process.env.NODE_ENV === 'production') {
     // like main.js file, or main.css file
     const path = require('path');
     app.use(express.static(path.join(__dirname, '/client/build')));
+    // Previously: app.use(express.static('/client/build'));
 
     // Ensure express serves index.html file
     // if it doesn't recognize the route
