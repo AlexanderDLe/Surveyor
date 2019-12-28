@@ -5,9 +5,8 @@ import { fetchUser } from '../actions';
 
 import Header from './Header';
 import Landing from './Landing';
-
-const Dashboard = () => <div className="">Dashboard</div>;
-const SurveyNew = () => <div className="">New Survey</div>;
+import Dashboard from './Dashboard';
+import SurveyNew from './surveys/SurveyNew';
 
 class App extends React.Component {
     componentDidMount() {
